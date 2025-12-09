@@ -1,0 +1,138 @@
+
+.sidebar {
+  width: 275px;
+  background-color: #0052c2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+
+
+
+.SidebarMenuSection_s_sidebar_menu__divider__kDbeK {
+    background-color: #2c85ff;
+    height: 2px;
+    margin: 24px 0;
+    width: 100%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.nav-text{
+    color: white;
+    border: none;
+    text-align: left;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav-button {
+  background: none;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  color: white;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 10px;
+  display: flex;
+}
+.nav-button:hover,
+.nav-button.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+svg {
+    min-width: 20px;
+    width: 24px;
+}
+
+.sidebar path {
+    fill: #fff;
+}
+
+.sidebar-footer {
+  margin-top: auto; /* para pegarlo abajo si está en un flex vertical */
+}
+
+.sidebar-divider {
+  height: 1px;
+  background-color: #2c85ff;
+  margin: 1.5rem 0;
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.user-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 0.8rem;
+  color: #0033A0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+
+/* ===== FOOTER MOBILE ===== */
+.bottom-nav-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .bottom-nav-mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #0052c2 ;
+    color: white;
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    z-index: 9999;
+  }
+
+  .bottom-nav-mobile svg{
+    color: white !important;
+  }
+
+  .bn-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .bn-item.active {
+    color: #0044ff;
+  }
+}

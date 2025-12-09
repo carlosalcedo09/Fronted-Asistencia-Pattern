@@ -1,0 +1,201 @@
+.container {
+  background: white;
+  height: 100vh;
+  display: flex;
+}
+
+.img-logo-login{
+    width: 40%;
+    margin-bottom: 2rem;
+}
+
+.login-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  text-align: center;
+  width: 50%;
+}
+
+.login h1 {
+  color: #0052c2;
+  margin: 0;
+}
+
+.login h2{
+    color: #6bcdd9;
+}
+
+.form-login {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.campo label {
+  font-weight: 600;
+  color: gray;
+  margin-bottom: 0.5rem;
+}
+
+.campo input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: white;
+  color: gray;
+}
+
+.campo-password .input-con-icono {
+  position: relative;
+}
+
+.campo-password input {
+  width: 100%;
+  padding-right: 2.5rem;
+}
+
+.icono-ver path{
+    fill: gray;
+}
+
+.icono-ver {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+input:focus {
+  border: 2px solid #0052c2;
+  background: white;
+  outline: none;
+}
+
+.form-login button {
+  padding: 0.8rem;
+  background-color: #0052c2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.form-login button:hover {
+  background-color: #003c99;
+}
+
+.container-img {
+  height: 100vh;
+  width: 50%;
+   background-image: 
+    linear-gradient(to bottom right, rgb(134 149 169 / 70%), rgba(0, 82, 194, 0.9)),
+    url('https://centenariooficinas.pe/wp-content/uploads/2023/11/real-1-1.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mensaje-error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  background: rgb(255, 202, 202);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .container-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  .container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 2;
+  }
+
+  .login-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3; 
+    padding: 1rem;
+  }
+
+  .login {
+    width: 90%;
+    max-width: 380px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    text-align: center;
+  }
+
+  .img-logo-login {
+    width: 50%;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .login h1 {
+    font-size: 1.6rem;
+  }
+
+  .login h2 {
+    font-size: 1.2rem;
+  }
+
+  .form-login {
+    gap: 1rem;
+  }
+
+  .login {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,177 @@
+/* ===================== */
+/* ESTILOS GENERALES     */
+/* ===================== */
+
+.main p {
+  color: black;
+  padding: 20px 10px 10px;
+}
+
+.inicio-container {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.card-bienvenida {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  flex-wrap: wrap;
+}
+
+.card-bienvenida h1,
+.card-bienvenida p,
+.text-bold {
+  margin: 0;
+  color: black;
+  font-weight: bold;
+}
+
+.ahorro-total {
+  text-align: right;
+}
+
+.ahorro-total p {
+  color: #555;
+  margin: 0;
+}
+
+.ahorro-total h2 {
+  color: #003b99;
+  margin: 0;
+}
+
+
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* DOS COLUMNAS IGUALES */
+  gap: 1rem;
+  width: 100%;
+}
+
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  min-width: 230px;
+  justify-content: center;
+}
+
+.icon-dashboard {
+  width: 100px;
+  padding: 5px;
+}
+
+.content-card {
+  margin-left: 20px;
+}
+
+.fondo h3 {
+  margin-top: 10px;
+  color: black;
+}
+
+.fondo h2 {
+  color: #003b99;
+  margin: 10px 0;
+  font-size: 32px;
+}
+
+.fondo-tipo {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* ===================== */
+/* RESPONSIVE            */
+/* ===================== */
+
+@media (max-width: 1024px) {
+  .inicio-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-bienvenida {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ahorro-total {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Sidebar ocupa 100% */
+  .slidebar {
+    width: 100%;
+  }
+
+  .main {
+    padding: 1.5rem;
+    padding-bottom: 7rem;
+    width: 100%;
+  }
+
+  /* Cards en 1 columna */
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .ahorro-total{
+    text-align: center;
+    width: 95%;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .icon-dashboard {
+    width: 80px;
+  }
+
+  .fondo h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-bienvenida {
+    padding: 20px;
+  }
+
+  .icon-dashboard {
+    width: 65px;
+  }
+
+  .fondo h2 {
+    font-size: 22px;
+  }
+
+  .content-card {
+    margin-left: 10px;
+  }
+}

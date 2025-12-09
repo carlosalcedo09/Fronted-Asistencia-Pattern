@@ -1,0 +1,294 @@
+.contenedor-avatar-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 5rem; /* espacio general */
+  margin-bottom: 2rem;
+}
+
+.avatar {
+  width: 10rem;
+  height: 10rem;
+  background-color: #6bcdd9;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid white;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.card-inicial {
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #6bcdd9;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  padding-top: 6rem; 
+  width: 100%;
+  z-index: 0;
+}
+
+.card-inicial h1,
+.card-inicial p,
+.text-bold {
+  margin: 0;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contenedor-datos {
+  display: flex;
+  gap: 2rem;
+}
+
+.contenedor-ubicacion{
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.seccion-ubicacion{
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.seccion{
+  background: white;
+  width: 50%;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.titulo-seccion {
+  background-color: #0052c2;
+  border-radius: 15px;
+  padding: 1rem;
+  display: flex;
+  align-items: center; 
+  gap: 0.75rem; 
+}
+
+.titulo-seccion h3 {
+  margin: 0;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.grupo-inputs {
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.floating-label {
+  position: relative;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+
+.floating-label input {
+  width: 100%;
+  padding: 1.2rem 0.75rem 0.5rem;
+  border: 1px solid #ccc;
+  color: gray;
+  border-radius: 15px;
+  outline: none;
+  background: white;
+}
+
+.floating-label label {
+  position: absolute;
+  top: 1rem;
+  left: 0.75rem;
+  background: white;
+  padding: 0 0.25rem;
+  color: #aaa;
+  font-size: 1rem;
+  transition: 0.2s ease all;
+  pointer-events: none;
+}
+
+.floating-label input:focus {
+  border: 2px solid #0052c2;
+}
+
+.floating-label input:focus + label {
+  top: -0.2rem;
+  left: 0.9rem;
+  font-size: 0.75rem;
+  color: #888; /* También gris al enfocar */
+  color: black;
+}
+
+.floating-label input:not(:placeholder-shown) + label {
+  top: -0.2rem;
+  left: 0.9rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #0052c2;
+}
+
+.icono-editar {
+  filter: brightness(0) invert(1);
+}
+
+.floating-label input:not([readonly]) {
+  border: 2px solid #0052c2;
+}
+
+.btn-guardar {
+  background-color: #0052c2;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-guardar:hover {
+  background-color: #6bcdd9;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+  background-color: #6bcdd9 !important;
+}
+
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:focus {
+  background-color: #6bcdd9 !important;
+}
+
+.swal2-title{
+  color: #0052c2
+}
+
+.contenedor-datos path, .contenedor-ubicacion path {
+    fill: #fff;
+}
+
+@media (max-width: 1024px) {
+
+  .contenedor-datos {
+    gap: 1.5rem;
+  }
+
+  .seccion {
+    padding: 0.8rem;
+  }
+
+  .titulo-seccion h3 {
+    font-size: 1.1rem;
+  }
+
+  .avatar {
+    width: 8.5rem;
+    height: 8.5rem;
+    font-size: 2rem;
+  }
+
+  .card-inicial {
+    padding-top: 5.5rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .main {
+    padding: 1rem;
+    padding-bottom: 5rem !important;
+  }
+
+  .contenedor-avatar-card {
+    margin-top: 3rem;
+  }
+
+  .avatar {
+    width: 7rem;
+    height: 7rem;
+    font-size: 2rem;
+  }
+
+  .card-inicial {
+    padding-top: 4.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .contenedor-datos {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .seccion {
+    width: 100%;
+  }
+
+  .seccion-ubicacion {
+    width: 100%;
+  }
+
+  .grupo-inputs {
+    flex-direction: column;
+  }
+
+  .floating-label {
+    width: 100%;
+  }
+
+  .titulo-seccion {
+    padding: 0.8rem;
+  }
+
+  .titulo-seccion h3 {
+    font-size: 1rem;
+  }
+
+  .icono-editar {
+    width: 28px;
+    margin-top: 0.5rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .main {
+    padding: 0.5rem;
+  }
+
+  .avatar {
+    width: 6.5rem;
+    height: 6.5rem;
+    font-size: 1.8rem;
+  }
+
+  .card-inicial {
+    padding-top: 4rem;
+  }
+
+  .titulo-seccion {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .titulo-seccion h3 {
+    font-size: 0.9rem;
+  }
+
+  .floating-label input {
+    padding: 1rem;
+  }
+}

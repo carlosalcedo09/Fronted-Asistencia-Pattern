@@ -1,0 +1,273 @@
+.main-encabezado{
+    color: #0052c2
+}
+
+.acciones-marcacion {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+   width: 100%;
+}
+.column{
+    display: flex;
+}
+
+.column-seccion-a{
+    width: 65%;
+}
+
+
+.card{
+  min-width: 250px !important;
+}
+
+.column-seccion-b{
+    width: 35%;
+}
+.accciones-content{
+    width: 31%;
+}
+
+.btn-marcacion {
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  background-color: white;
+  color: gray;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 90%;
+  margin: 1rem;
+}
+
+.btn-marcacion.grande {
+  height: 180px;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
+.btn-marcacion.activo {
+  background-color: #e9e6e6;
+  border: 2px solid #2c85ff;
+  color: #2c85ff;
+  font-weight: bold;
+  box-shadow: 0 0 10px #2c85ff;
+}
+
+.btn-marcacion.deshabilitado {
+  background-color: white;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.content-marcaciones{
+    padding: 20px;
+}
+
+.list-marcaciones{
+    width: 100%;
+    min-height: 500px;
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+
+.ver-detalle {
+  margin-top: 15px;
+  background: none;
+  border: 1.5px solid #0052c2;
+  color: #0052c2;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-marcacion:hover {
+  background-color: #2c85ff;
+  color: white;
+}
+
+.ver-detalle:hover {
+  background-color: #eef3ff;
+}
+
+
+.content-cronometro {
+  text-align: center;
+  padding: 1rem;
+  background: #6bcdd9;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.reloj-activo {
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+  font-family: monospace;
+}
+
+
+.detail-marcation {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.estado-a-tiempo {
+  background-color: #d4edda;
+  color: #155724;
+  border-left: 5px solid #28a745;
+}
+
+.estado-fuera-de-tiempo {
+  background-color: #f7baba;
+  color: #790a13;
+  border-left: 5px solid #b32034;
+}
+
+.estado-antes-de-tiempo {
+  background-color: #fff3cd;
+  color:#856404;
+  border-left: 5px solid #ffc107;
+}
+
+.estado-no-determinado {
+  background-color: #e2e3e5;
+  color: #6c757d;
+  border-left: 5px solid #6c757d;
+}
+
+/* ============ RESPONSIVE ============ */
+
+/* TABLETS */
+@media (max-width: 992px) {
+
+  .column {
+    flex-direction: column;
+  }
+
+  .column-seccion-a,
+  .column-seccion-b {
+    width: 100%;
+  }
+
+  .acciones-marcacion {
+    flex-direction: column;
+  }
+
+  .accciones-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-marcacion {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .content-cronometro {
+    margin-top: 1rem;
+  }
+}
+
+/* MOVILES */
+@media (max-width: 768px) {
+   h1{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+   }
+
+  .inicio-container {
+    flex-direction: column;
+  }
+
+  .slidebar {
+    width: 100% !important;
+  }
+
+  .main {
+    width: 100%;
+    padding: 1.5rem;
+    padding-bottom: 7rem;
+  }
+
+  .column {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .column-seccion-a,
+  .column-seccion-b {
+    width: 100%;
+  }
+
+  .acciones-marcacion {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .accciones-content {
+    width: 100%;
+  }
+
+  .btn-marcacion {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .btn-marcacion.grande {
+    height: 70px;
+  }
+
+  .list-marcaciones {
+    min-height: auto;
+    padding: 1rem;
+  }
+
+  .content-marcaciones {
+    padding: 10px;
+  }
+
+  .content-cronometro {
+    width: 100%;
+  }
+
+  .card {
+    width: 100% !important;
+  }
+
+  .especial-content{
+    display: none;
+  }
+
+  .card-horario {
+    width: 100% !important;
+  }
+}
+
+/* EXTRA PEQUEÑOS */
+@media (max-width: 480px) {
+  .btn-marcacion {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  .reloj-activo {
+    font-size: 3rem;
+  }
+
+  .content-cronometro {
+    padding: 0.7rem;
+  }
+}
