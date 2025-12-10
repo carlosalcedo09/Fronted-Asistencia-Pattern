@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "http://localhost:8000/api/";
+const baseURL = import.meta.env.VITE_API_URL;
 
 const axiosInstance = axios.create({
   baseURL,
@@ -9,7 +9,6 @@ const axiosInstance = axios.create({
   },
 });
 
-// ⬇️ Interceptor de REQUEST: añade el token a cada solicitud
 axiosInstance.interceptors.request.use(
   config => {
     const token = localStorage.getItem("access_token");
