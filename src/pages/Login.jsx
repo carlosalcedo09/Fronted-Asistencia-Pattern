@@ -1,5 +1,6 @@
 import "../styles/Login.css";
 import { useLoginLogic } from "../hooks/LoginLogic";
+import Pattern from "../assets/Pattern.png";
 
 export const Login = () => {
   const {
@@ -17,7 +18,7 @@ export const Login = () => {
     <div className="container">
       <div className="login-container">
         <div className="login">
-          <img src="src/assets/Pattern.png" className="img-logo-login" />
+          <img src={Pattern} className="img-logo-login" />
           <h2>Bienvenido a tu</h2>
           <h1>Sistema de Asistencia</h1>
 
