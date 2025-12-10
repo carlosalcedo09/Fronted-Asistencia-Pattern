@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { Slidebar } from '../components/Slidebar';
 import Reloj from '../components/Reloj';
-import { CardHorario } from '../components/card-horario';
+import { CardHorario } from '../components/Card-horario';
 import { useMarcacionesLogic } from '../hooks/MarcacionesLogic';
 import '../styles/Marcaciones.css';
 

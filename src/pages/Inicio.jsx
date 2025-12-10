@@ -1,7 +1,7 @@
 import "../styles/Inicio.css";
 import { useEffect, useState } from 'react';
 import { Slidebar } from '../components/Slidebar';
-import { CardHorario } from "../components/card-horario";
+import { CardHorario } from "../components/Card-horario";
 import { CardAcciones } from "../components/Card-accciones";
 import { ContadorAnimado } from "../components/ContadorAnimado"; 
 import { useInicioLogic } from '../hooks/InicioLogic';
