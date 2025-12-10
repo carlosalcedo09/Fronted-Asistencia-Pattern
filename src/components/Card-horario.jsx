@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from "react";
-import "../styles/Card-Horario.css";
+import "../styles/Card-horario.css";
 import axiosInstance from "../utils/AxiosInstance";
 import { AuthContext } from "../context/AuthContext";
 import { useNavigate } from 'react-router-dom';
