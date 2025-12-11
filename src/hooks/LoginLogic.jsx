@@ -27,7 +27,7 @@ export const useLoginLogic = () => {
     setError("");
 
     try {
-      const response = await axios.post("http://localhost:8000/api/token/", {
+      const response = await axios.post("https://backend-asistencia-pattern.onrender.com/api/token/", {
         username: usuario,
         password: password,
       });

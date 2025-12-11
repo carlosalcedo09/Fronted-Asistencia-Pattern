@@ -30,7 +30,7 @@ export const useHistorialLogic = () => {
   const obtenerMarcaciones = async () => {
     setCargando(true);
     try {
-      const response = await axiosInstance.get("http://localhost:8000/api/historial/", {
+      const response = await axiosInstance.get("https://backend-asistencia-pattern.onrender.com/api/historial/", {
         headers: { Authorization: `Bearer ${accessToken}` },
         params: {
           tipo: tipoMarcacion,
