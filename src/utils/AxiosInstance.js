@@ -20,7 +20,6 @@ axiosInstance.interceptors.request.use(
   error => Promise.reject(error)
 );
 
-// ⬇️ Interceptor de RESPONSE: renueva el token si expiró
 axiosInstance.interceptors.response.use(
   response => response,
   async error => {
