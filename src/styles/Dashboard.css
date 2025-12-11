@@ -51,6 +51,9 @@ label {
   font-weight: bold;
 }
 
+.MuiTypography-root {
+    color: #0052c2 !important;
+}
 
 @media (max-width: 1024px) {
   .conteiner-graficos {

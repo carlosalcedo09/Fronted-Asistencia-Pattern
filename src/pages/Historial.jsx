@@ -2,6 +2,8 @@ import { Slidebar } from '../components/Slidebar';
 import { useHistorialLogic } from '../hooks/HistorialLogic';
 import "../styles/Historial.css";
 
+import limpiarI from "../assets/reiniciar.png";
+
 export const Historial = () => {
   const {
     tipoMarcacion,
@@ -68,7 +70,7 @@ export const Historial = () => {
 
           <div className="boton-limpiar">
             <img
-              src="src/assets/reiniciar.png"
+              src={limpiarI}
               alt="Limpiar filtros"
               className="icon-reiniciar"
               onClick={limpiarFiltros}

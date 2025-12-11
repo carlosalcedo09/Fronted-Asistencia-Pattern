@@ -1,6 +1,7 @@
 import { Slidebar } from '../components/Slidebar';
 import { usePerfilLogic } from '../hooks/PerfilLogic';
 import "../styles/Perfil.css";
+import editarI from "../assets/edit_icon_128873.svg";
 
 export const Perfil = () => {
   const {
@@ -24,7 +25,7 @@ export const Perfil = () => {
             <h1>{nombreCompleto}</h1>
             <p>{cargo}</p>
             <img
-              src="src/assets/edit_icon_128873.svg"
+              src={editarI}
               alt="Editar"
               className="icono-editar"
               onClick={() => setModoEdicion(!modoEdicion)}
