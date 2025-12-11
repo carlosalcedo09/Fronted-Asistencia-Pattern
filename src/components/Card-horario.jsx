@@ -12,7 +12,7 @@ export const CardHorario = () => {
   useEffect(() => {
     const fetchHorario = async () => {
       try {
-        const response = await axiosInstance.get("http://localhost:8000/api/horario-hoy/", {
+        const response = await axiosInstance.get("https://backend-asistencia-pattern.onrender.com/api/horario-hoy/", {
           headers: {
             Authorization: `Bearer ${accessToken}`
           }

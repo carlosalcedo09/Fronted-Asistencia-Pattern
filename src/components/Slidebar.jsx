@@ -22,7 +22,7 @@ export const Slidebar= () => {
         const token = localStorage.getItem("access_token");
         try {
         await axios.post(
-            "http://localhost:8000/api/logout-all/",
+            "https://backend-asistencia-pattern.onrender.com/api/logout-all/",
             {},
             {
             headers: {

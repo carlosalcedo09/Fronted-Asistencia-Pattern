@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../styles/Header.css";
-
+import pattern from "../assets/Pattern.png";
 export const Header = () => {
   const [showUserCard, setShowUserCard] = useState(false);
 
@@ -21,7 +21,7 @@ export const Header = () => {
     <header className="header">
       <div className="header__logo">
         <a href="/" className="logo-link">
-          <img src="src/assets/Pattern.png" className="img-logo" alt="logo" />
+          <img src={pattern} className="img-logo" alt="logo" />
         </a>
       </div>
 

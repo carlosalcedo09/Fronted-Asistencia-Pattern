@@ -1,6 +1,13 @@
 // src/hooks/InicioLogic.js
 import { useEffect, useState } from 'react';
 import axiosInstance from '../utils/AxiosInstance';
+import p365 from "../assets/365.png";
+import asistenciaI from "../assets/asistencia.png";
+import ausenciaI from "../assets/ausencia.png";
+import tardeI from "../assets/tarde.png";
+import tiempoextraI from "../assets/tiempo-extra.png";
+import calendarioI from "../assets/calendario.png";
+
 
 export const useInicioLogic = () => {
   const [resumen, setResumen] = useState(null);
@@ -27,42 +34,42 @@ export const useInicioLogic = () => {
       cantidad: resumen.dias_restantes,
       texto: "Días restantes",
       mostrarBoton: false,
-      imagen: "src/assets/365.png",
+      imagen: p365,
     },
     {
       id: 2,
       cantidad: resumen.asistencias,
       texto: "Asistencias",
       mostrarBoton: false,
-      imagen: "src/assets/asistencia.png",
+      imagen: asistenciaI,
     },
     {
       id: 3,
       cantidad: resumen.faltas,
       texto: "Faltas",
       mostrarBoton: false,
-      imagen: "src/assets/ausencia.png",
+      imagen: ausenciaI,
     },
     {
       id: 4,
       cantidad: resumen.tardanzas,
       texto: "Tardanzas",
       mostrarBoton: false,
-      imagen: "src/assets/tarde.png",
+      imagen: tardeI,
     },
     {
       id: 5,
       cantidad: resumen.horas_extra,
       texto: "Horas Extra",
       mostrarBoton: false,
-      imagen: "src/assets/tiempo-extra.png",
+      imagen: tiempoextraI,
     },
     {
       id: 6,
       cantidad: resumen.horas_trabajadas,
       texto: "Horas trabajadas",
       mostrarBoton: false,
-      imagen: "src/assets/calendario.png",
+      imagen: calendarioI,
     },
   ] : [];
 
